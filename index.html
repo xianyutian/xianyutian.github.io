@@ -152,27 +152,90 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-markdown语法学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+      <a class="article-title" href="/2021/10/06/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Markdown语法学习</a>
     </h1>
   
 
         
-        <a href="/2021/10/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-10-06T02:05:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-06</time>
+        <a href="/2021/10/06/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-10-06T02:05:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="1、代码块"><a href="#1、代码块" class="headerlink" title="1、代码块"></a>1、代码块</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块：``` 代码语言（也可不写）  即可，注意中间的空格</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、标题"><a href="#2、标题" class="headerlink" title="2、标题"></a>2、标题</h2><p>一到六级标题，几级标题就在标题前加几个#号，如 #### 四级标题 显示效果如下：（注意#号和正文之间要打空格）</p>
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h2 id="3、字体"><a href="#3、字体" class="headerlink" title="3、字体"></a>3、字体</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、加粗：**加粗内容**</span><br><span class="line"><span class="number">2</span>、删除线：~~别出声~~</span><br><span class="line"><span class="number">3</span>、斜体：*今天的长城也很和平*</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<p>1、加粗：<strong>加粗内容</strong><br>2、删除线：<del>别出声</del><br>3、斜体：<em>今天的长城也很和平</em></p>
+<h2 id="4、引用"><a href="#4、引用" class="headerlink" title="4、引用"></a>4、引用</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">引用语法： &gt;具体内容</span><br><span class="line">         &gt;&gt;具体内容</span><br><span class="line">         &gt;&gt;&gt;具体内容 </span><br><span class="line">       （注意没有空格哦！）</span><br></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<blockquote>
+<p>具体内容</p>
+<blockquote>
+<blockquote>
+<p>具体内容</p>
+<blockquote>
+<p>具体内容 </p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="5、分割线"><a href="#5、分割线" class="headerlink" title="5、分割线"></a>5、分割线</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">分割线：--- 或 ***</span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<hr>
+<hr>
+<h2 id="6、插入图片（重点！！）"><a href="#6、插入图片（重点！！）" class="headerlink" title="6、插入图片（重点！！）"></a>6、插入图片（重点！！）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">语法： ![图片描述](图片路径)</span><br><span class="line">    如：![我的自拍](./mdLearnImage./动漫女头.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<p><img src="./mdLearnImage./%E5%8A%A8%E6%BC%AB%E5%A5%B3%E5%A4%B4.jpg" alt="我的自拍"></p>
+<h2 id="7、超链接"><a href="#7、超链接" class="headerlink" title="7、超链接"></a>7、超链接</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">超链接语法：[链接显示内容](链接的网址)</span><br><span class="line">         如：[去百度](https:<span class="comment">//www.baidu.com)</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：<a target="_blank" rel="noopener" href="https://www.baidu.com/">去百度</a></p>
+<h2 id="8、列表"><a href="#8、列表" class="headerlink" title="8、列表"></a>8、列表</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">无序列表：- 目录<span class="number">1</span></span><br><span class="line">        - 目录<span class="number">2</span> （注意空格）</span><br><span class="line">有序列表：数字.目录<span class="number">1</span>，按enter键后会自动往下补（数字增长）</span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<p>无序：</p>
+<ul>
+<li>目录一</li>
+<li>目录二</li>
+</ul>
+<p>有序：</p>
+<ol>
+<li>目录一</li>
+<li>目录二</li>
+</ol>
+<h2 id="9、表格"><a href="#9、表格" class="headerlink" title="9、表格"></a>9、表格</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用源码写太麻烦了，直接鼠标右键然后插入表格</span><br><span class="line">源码写：</span><br><span class="line">    |表头一|表头二|表头三|</span><br><span class="line">    按enter后会给出相应列数和两行的表格</span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>性别</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lt</td>
+<td>女</td>
+<td>这是个小仙女！~</td>
+</tr>
+</tbody></table>
+
       
 
       
@@ -184,7 +247,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/10/06/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
         </p>
       
 
