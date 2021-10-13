@@ -152,6 +152,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-picture" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/13/picture/">picture</a>
+    </h1>
+  
+
+        
+        <a href="/2021/10/13/picture/" class="archive-article-date">
+  	<time datetime="2021-10-13T12:37:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+
+<p>我是分割线</p>
+
+
+<p><img src="/2021/10/13/picture/%E5%8A%A8%E6%BC%AB%E5%A5%B3%E5%A4%B4.jpg" alt="动漫女生头像"></p>
+<p>我是分割线</p>
+<p><img src="/2021/10/13/picture/%E5%8A%A8%E6%BC%AB%E5%A5%B3%E5%A4%B4.jpg" alt="2"></p>
+<p>我是分割线</p>
+<p><img src="/2021/10/13/picture/%E5%8A%A8%E6%BC%AB%E5%A5%B3%E5%A4%B4.jpg" alt="使用其他相对路径"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/10/13/picture/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-markdown语法学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -198,10 +270,20 @@
 <p>显示效果：</p>
 <hr>
 <hr>
-<h2 id="6、插入图片（重点！！）"><a href="#6、插入图片（重点！！）" class="headerlink" title="6、插入图片（重点！！）"></a>6、插入图片（重点！！）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">语法： ![图片描述](图片路径)</span><br><span class="line">    如：![我的自拍](./mdLearnImage./动漫女头.jpg)</span><br></pre></td></tr></table></figure>
+<h2 id="6、插入图片（重点！！）"><a href="#6、插入图片（重点！！）" class="headerlink" title="6、插入图片（重点！！）"></a>6、插入图片（重点！！）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">语法： ![图片描述](图片路径)</span><br><span class="line">    如：![我的自拍](mdLearnImage./动漫女头.jpg)</span><br></pre></td></tr></table></figure>
 
 <p>效果如下：</p>
-<p><img src="./mdLearnImage/%E5%8A%A8%E6%BC%AB%E5%A5%B3%E5%A4%B4.jpg" alt="我的自拍"></p>
+<p><img src="/2021/10/06/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%8A%A8%E6%BC%AB%E5%A5%B3%E5%A4%B4.jpg" alt="我的自拍"></p>
+<p>mdLearnImgae是与本md文件同一目录的文件夹，这个图片在本地编写时是可以看见的</p>
+<p>但是！如果要显示的是本地图片，上图写的相对路径，在网页端会显示不出来</p>
+<p>解决方案：</p>
+<p>1、安装hexo-asset-image插件：使用命令npm install hexo-asset-image –save安装</p>
+<p>2、找到_config.yml文件，将post_asset_folder的值改为true，此后每用hexo new一个md文件，就会自动生成一个和它同名的文件夹（如果是已将建好的md文件，建一个与它同名的文件夹即可）</p>
+<p>3、将路径更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![我的自拍](markdown语法学习笔记./动漫女头.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>（PS：神奇的是，当我图片成功显示后，若再把图片相对路径写成原来那个，则还是可以显示，且网上说的用 格式来插入图片）</p>
 <h2 id="7、超链接"><a href="#7、超链接" class="headerlink" title="7、超链接"></a>7、超链接</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">超链接语法：[链接显示内容](链接的网址)</span><br><span class="line">         如：[去百度](https:<span class="comment">//www.baidu.com)</span></span><br></pre></td></tr></table></figure>
 
 <p>效果如下：<a target="_blank" rel="noopener" href="https://www.baidu.com/">去百度</a></p>
